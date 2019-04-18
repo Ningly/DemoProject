@@ -11,5 +11,16 @@ public class InetAddressTest {
 
 
 
+        System.out.println(localHost.getHostAddress());
+        System.out.println(localHost.getHostName());
+        System.out.println(localHost.getHostAddress());
+        System.out.println(localHost.getHostName());
+        System.out.println(localHost.getHostAddress());
+        System.out.println(localHost.getHostName());
+        System.out.println(localHost.getHostAddress());
+        System.out.println(localHost.getHostName());
+
+
+
     }
 }
