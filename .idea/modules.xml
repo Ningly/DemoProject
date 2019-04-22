@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringProject/SpringProject.iml" filepath="$PROJECT_DIR$/SpringProject/SpringProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringProject2/SpringProject2.iml" filepath="$PROJECT_DIR$/SpringProject2/SpringProject2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringProject3/SpringProject3.iml" filepath="$PROJECT_DIR$/SpringProject3/SpringProject3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sqljsdb2/Sqljsdb2.iml" filepath="$PROJECT_DIR$/Sqljsdb2/Sqljsdb2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sqljsdbc/Sqljsdbc.iml" filepath="$PROJECT_DIR$/Sqljsdbc/Sqljsdbc.iml" />
     </modules>
   </component>
 </project>
