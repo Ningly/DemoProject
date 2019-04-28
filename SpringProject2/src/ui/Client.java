@@ -1,12 +1,9 @@
 package ui;
 
 
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+import config.Configuration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
 import service.ICustomerService;
 
 /*
@@ -26,7 +23,9 @@ public class Client {
     @SuppressWarnings("all")
     public static void main(String[] args){
         //1. 获取容器
-        ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
+//        ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
+//        ApplicationContext ac=new ClassPathXmlApplicationContext("config/bean.xml");
+        ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml", Configuration.class);
 
         /*Resource resource=new ClassPathResource("bean.xml");
         BeanFactory factory=new XmlBeanFactory(resource);*/

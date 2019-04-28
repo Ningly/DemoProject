@@ -18,8 +18,7 @@ import java.util.List;
 * @since <pre>Apr 22, 2019</pre> 
 * @version 1.0 
 */ 
-public class StudentsServiceImplTest { 
-
+public class StudentsServiceImplTest {
 @Before
 public void before() throws Exception { 
 } 
@@ -35,6 +34,7 @@ public void after() throws Exception {
 */ 
 @Test
 public void testFindAllStudents() throws Exception {
+
 
     ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
 

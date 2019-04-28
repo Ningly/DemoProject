@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnnotationConfigIOC/AnnotationConfigIOC.iml" filepath="$PROJECT_DIR$/AnnotationConfigIOC/AnnotationConfigIOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnnotationIOC/AnnotationIOC.iml" filepath="$PROJECT_DIR$/AnnotationIOC/AnnotationIOC.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DemoProject.iml" filepath="$PROJECT_DIR$/.idea/DemoProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FirstServlet/FirstServlet.iml" filepath="$PROJECT_DIR$/FirstServlet/FirstServlet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringDI/SpringDI.iml" filepath="$PROJECT_DIR$/SpringDI/SpringDI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringProject/SpringProject.iml" filepath="$PROJECT_DIR$/SpringProject/SpringProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringProject2/SpringProject2.iml" filepath="$PROJECT_DIR$/SpringProject2/SpringProject2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringProject3/SpringProject3.iml" filepath="$PROJECT_DIR$/SpringProject3/SpringProject3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sqljsdb2/Sqljsdb2.iml" filepath="$PROJECT_DIR$/Sqljsdb2/Sqljsdb2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sqljsdbc/Sqljsdbc.iml" filepath="$PROJECT_DIR$/Sqljsdbc/Sqljsdbc.iml" />
     </modules>
   </component>
 </project>

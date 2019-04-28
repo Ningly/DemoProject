@@ -12,7 +12,7 @@ http://www.springframework.org/schema/beans ">
             3. 使用注解注入
         注入的数据类型有3中：
             1. 基本类型和String类型
-            2. 其它bean 类型（必须是在spring的配置文件中出现过的bean类型）
+            2. 其它bean类型【自定义类型】（必须是在spring的配置文件中出现过的bean类型）
             3. 复杂类型（集合类型）
     -->
     <!--构造函数注入：

@@ -4,7 +4,5 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/beans ">
-    <!--配置资源：把对象的创建交给spring来管理-->
-    <bean id="initDriver" class="com.microsoft.sqlserver.jdbc.SQLServerDriver"></bean>
 
 </beans>

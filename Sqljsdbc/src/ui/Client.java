@@ -1,8 +1,5 @@
 package ui;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.sql.*;
 
 public class Client {
@@ -10,8 +7,6 @@ public class Client {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         //1. 加载与注册JDBC驱动
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-
-
 
         //2. 得到连接
         Connection conn=DriverManager.getConnection("jdbc:sqlserver://localhost:1433;DatabaseName=Tutoral", "sa", "Sa123456");

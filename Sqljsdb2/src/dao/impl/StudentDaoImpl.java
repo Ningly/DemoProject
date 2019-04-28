@@ -1,6 +1,5 @@
 package dao.impl;
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 import dao.IStudentDao;
 import domain.Students;
 import org.apache.commons.dbutils.QueryRunner;
@@ -35,8 +34,7 @@ public class StudentDaoImpl implements IStudentDao {
     @Override
     public void saveStudent(Students stu) {
         try {
-            runner.update("insert into students (FirstName,LastName,Gender) values(?,?,?)",
-                    stu.getFirstName(),stu.getLastName(),stu.getGender());
+            runner.update("insert into students (FirstName,LastName,Gender) values(?,?,?)",stu.getFirstName(),stu.getLastName(),stu.getGender());
         } catch (SQLException e) {
             throw new RuntimeException(e.getMessage());
         }
