@@ -1,32 +1,21 @@
 package test.Service.impl; 
 
+import domain.Students;
 import org.junit.Test;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import service.IStudentsService;
 import service.impl.StudentsServiceImpl;
-import domain.Students;
-import org.junit.Before; 
-import org.junit.After;
 
 import java.util.List;
 
-/** 
-* StudentsServiceImpl Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>Apr 22, 2019</pre> 
-* @version 1.0 
-*/ 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"classpath:bean.xml"})
 public class StudentsServiceImplTest {
-@Before
-public void before() throws Exception { 
-} 
-
-@After
-public void after() throws Exception { 
-} 
-
+    @Autowired
+    IStudentsService cs=null;
 /** 
 * 
 * Method: findAllStudents() 
@@ -34,11 +23,8 @@ public void after() throws Exception {
 */ 
 @Test
 public void testFindAllStudents() throws Exception {
-
-
-    ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
-
-    IStudentsService cs= (IStudentsService) ac.getBean("studentsService");
+    /*ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
+    IStudentsService cs= (IStudentsService) ac.getBean("studentsService");*/
     List<Students> list=cs.findAllStudents();
     for (Students stu :
             list) {

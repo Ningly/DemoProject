@@ -1,5 +1,6 @@
 package test.Service.impl; 
 
+import factory.BeanFactory;
 import service.IStudentsService;
 import service.impl.StudentsServiceImpl;
 import domain.Students;
@@ -33,7 +34,7 @@ public void after() throws Exception {
 */ 
 @Test
 public void testFindAllStudents() throws Exception {
-    IStudentsService cs=new StudentsServiceImpl();
+    IStudentsService cs= BeanFactory.getNewInstance();
     List<Students> list=cs.findAllStudents();
     for (Students stu :
             list) {
