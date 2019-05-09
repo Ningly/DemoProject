@@ -4,10 +4,14 @@ import com.dao.IStudentDao;
 import com.domain.Students;
 import com.service.IStudentsService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
 @Service("studentsService")
+//@Transactional(propagation = Propagation.SUPPORTS,readOnly = true)  //只读性
+@Transactional(propagation = Propagation.REQUIRED,readOnly = false)  //读写型
 public class StudentsServiceImpl implements IStudentsService {
 
     @Resource(name = "studentDao")
@@ -19,6 +23,7 @@ public class StudentsServiceImpl implements IStudentsService {
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS,readOnly = true)
     public Students change(int id1, int id2, int arg) {
         // 1. 根据ID获取信息
         Students source = studentDao.findStudentById(id1);

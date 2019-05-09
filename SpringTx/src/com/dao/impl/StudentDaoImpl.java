@@ -4,11 +4,10 @@ import com.dao.IStudentDao;
 import com.domain.Students;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("studentDao")
+//@Repository("studentDao")
 public class StudentDaoImpl extends JdbcDaoSupport implements IStudentDao {
     
     
