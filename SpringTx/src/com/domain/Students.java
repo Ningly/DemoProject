@@ -1,22 +1,17 @@
-package com.doman;
+package com.domain;
 
-import java.io.Serializable;
-
-public class Student {
+public class Students {
     private int Id;
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "Id=" + Id +
-                ", FirstName='" + FirstName + '\'' +
-                ", LastName='" + LastName + '\'' +
-                ", Gender=" + Gender +
-                '}';
-    }
+    private String FirstName;
+    private String LastName;
+    private int Gender;
 
     public int getId() {
         return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public String getFirstName() {
@@ -31,6 +26,16 @@ public class Student {
         return LastName;
     }
 
+    @Override
+    public String toString() {
+        return "Students{" +
+                "Id=" + Id +
+                ", FirstName='" + FirstName + '\'' +
+                ", LastName='" + LastName + '\'' +
+                ", Gender=" + Gender +
+                '}';
+    }
+
     public void setLastName(String lastName) {
         LastName = lastName;
     }
@@ -42,12 +47,4 @@ public class Student {
     public void setGender(int gender) {
         Gender = gender;
     }
-
-    public void setId(int id) {
-        Id = id;
-    }
-
-    private String FirstName;
-    private String LastName;
-    private int Gender;
 }

@@ -1,0 +1,17 @@
+package com.ui;
+
+import com.domain.Students;
+import com.service.IStudentsService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Client {
+    public static void main(String[] args) {
+        ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
+        IStudentsService studentsService=(IStudentsService)ac.getBean("studentsService");
+        Students stu1 = studentsService.findStudentById(1);
+        Students stu2 = studentsService.findStudentById(2);
+        System.out.println(stu1);
+        System.out.println(stu2);
+    }
+}
